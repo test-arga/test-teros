@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <style>
+        .horizontal ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: gray;
+            overflow: hidden;
+        }
+        .horizontal ul li{
+            float: left;
+        }
+        .horizontal ul li a{
+            text-decoration: none;
+            display: block;
+            color: white;
+            padding: 7px 15px;
+        }
+        .horizontal ul li a.active{
+            background-color: black;
+        }
+        .horizontal ul li a:hover:not(.active){
+            color: wheat;
+            background-color: black;
+            transition-delay: .3s;
+        }
+        .vertical ul{
+            list-style-type: none;
+            margin: 5px 0;
+            padding: 0;
+            width: 400px;
+            background-color: gray;
+        }
+        .vertical ul li a{
+            text-decoration: none;
+            display: block;
+            color: white;
+            padding: 7px 15px;
+        }
+        .vertical ul li a:hover{
+            color: wheat;
+            background-color: black;
+            transition-delay: .3s;
+        }
+    </style>
+</head>
+<body style="background-image: url(https://cdns.klimg.com/otosia.com/p/bank/2018/05/24/harga-mobil-toyota-terbaru-mei-2018-a3dbcf.jpg);background-size: cover;background-repeat: no-repeat;background-attachment: fixed;">
+    <div class="horizontal">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="1.html">Mitsubishi</a>
+            </li>
+            <li>
+                <a class="active" href="2.html">Toyota</a>
+            </li>
+            <li>
+                <a href="3.html">Daihatsu</a>
+            </li>
+            <li>
+                <a href="4.html">Honda</a>
+            </li>
+        </ul>
+    </div>
+    <div class="vertical">
+        <ul>
+            <li>
+                <a href="#">Alphard</a>
+            </li>
+            <li>
+                <a href="#">Avanza</a>
+            </li>
+            <li>
+                <a href="#">Fortuner</a>
+            </li>
+            <li>
+                <a href="#">Agya</a>
+            </li>
+            <li>
+                <a href="#">Hilux Single Cabin</a>
+            </li>
+            <li>
+                <a href="#">Hilux Double Cabin</a>
+            </li>
+            <li>
+                <a href="#">Kijang Inova</a>
+            </li>
+            <li>
+                <a href="#">Toyota Rush</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
